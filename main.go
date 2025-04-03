@@ -12,7 +12,7 @@ import (
 func handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(201)
-	_, err := w.Write([]byte("This is the response back from the server"))
+	_, err := w.Write([]byte("Love you 😘"))
 	if err != nil {
 		log.Fatal(err)
 	}
